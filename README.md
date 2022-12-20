@@ -1,6 +1,6 @@
 # HTML Auth Quotes
 
-The `<auth-quote>` is an easily embeddable HTML tag that include cryptographic metadata authenticating its author.
+The `<auth-quote>` is an easily embeddable HTML tag that includes cryptographic metadata authenticating its author.
 
 To enable others to `<auth-quote>` your documents, you first cryptographically sign the content in special way:
 
