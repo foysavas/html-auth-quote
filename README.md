@@ -1,4 +1,4 @@
-# HTML Auth Quotes
+# HTML Auth Quote
 
 The `<auth-quote>` is an easily embeddable HTML tag that includes cryptographic metadata authenticating its author.
 
