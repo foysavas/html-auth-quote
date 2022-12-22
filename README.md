@@ -24,9 +24,9 @@ This needs to stop!
 
 ## Why? (For AI Alarmists)
 
-From ancient times up until now, misquotes have been made by willfully deceptive humans. But today, as if human pseudo-Authors weren't bad enough, AI powered large language models have emerged as even more prolific textual sociopaths. Faster at writing, more well read, and with an objective function that cares only for the contour of language and not its truth, these AI love lying.
+From ancient times up until now, misquotes have been made by willfully deceptive humans. But today, as if human pseudo-authors weren't bad enough, AI powered large language models have emerged as even more prolific textual sociopaths. Faster at writing, more well read, and with an objective function that cares only for the contour of language and not its truth, these AI love lying.
 
-For example, this AI pseudo-Aristotle lied to me about Aquinas having a side gig as a organ innovator and then chose to unremorsefully quote a fake book:
+For example, this AI pseudo-Aristotle lied to me about Aquinas having a side gig as an organ innovator and then chose to unremorsefully quote a fake book:
 <img src="https://user-images.githubusercontent.com/1735/209176053-91c79c6d-dd62-43e1-b504-39a3c6d31b55.png" />
 
 ## How `<auth-quote>` Works
