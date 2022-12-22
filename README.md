@@ -1,5 +1,5 @@
 > **Warning**
-> This currently vaporware. If you'd like to help make it real, submit an issue introducing yourself.
+> This is currently vaporware. If you'd like to help make it real, submit an issue introducing yourself.
 
 ---
 
