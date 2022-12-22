@@ -1,6 +1,12 @@
+> **Warning**
+> This currently vaporware. If you'd like to help make it real, submit an issue introducing yourself.
+
+---
+
 # HTML Auth Quote
 
-The `<auth-quote>` is an easily embeddable HTML tag that includes cryptographic metadata authenticating its author.
+`<auth-quote>` is an easily embeddable HTML tag that includes cryptographic metadata authenticating its author.
+
 
 To enable others to `<auth-quote>` your documents, you first cryptographically sign the content in a special way:
 
