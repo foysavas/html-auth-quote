@@ -34,15 +34,15 @@ For example, this AI pseudo-Aristotle lied to me about Aquinas having a side gig
 
 To enable others to `<auth-quote>` your documents, you first cryptographically sign the content in a special way:
 
-1) produce a merkle tree of hashes from the sentences of your document
+1) produce a merkle tree of hashes from the segments of your document
 2) sign the merkle root of the above tree
 3) share the tree, signature digest, and your public key alongside your document
 
 
 When others `<auth-quote>` you, they will include at least these things as metadata:
-* a pruned merkle tree with paths to the quoted sentences
-* the merkle root signature digest
-* your public key
+* a multiproof from the merkle tree covering the quoted segments
+* the merkle tree root signed by the author
+* the author's public key
 
 ```html
 <auth-quote>
@@ -57,4 +57,6 @@ When others `<auth-quote>` you, they will include at least these things as metad
 >Hello World!</auth-quote>
 ```
 
-As a fallback, `<q>` tags may also be used.
+### Example of `<auth-content>`
+
+<img width="1079" alt="image" src="https://user-images.githubusercontent.com/1735/209724997-7cdb036a-7b5b-46fb-abb8-8babd004a9b0.png">
