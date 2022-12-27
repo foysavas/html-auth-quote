@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="icon" href="data:,">
     <title>De Finibus Bonorum et Malorum, Liber Primus</title>
     <style>
       body {
@@ -7,7 +8,7 @@
       }
       #content {
         display: block;
-        height: 300px;
+        height: 250px;
         overflow: scroll;
         width: calc(100vw - 80px);
         margin: 0px auto;
@@ -32,6 +33,9 @@
         height: 10em;
       }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js/crypto-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script src="./../auth-quote.js"></script>
   </head>
   <body>
     <h1>Example of &lt;auth-content&gt;</h1>
@@ -973,23 +977,21 @@
       <fieldset>
         <legend>Output</legend>
         <field>
-          <label>Author Public Key</label>
-          <p>This is specified as a libp2p multicodec</p>
-          <input readonly type="text" name="author-private-key" value="/ed25519-pub/D81C1EFF4BE21BBEA60EAFA632950661BBF6F03318270BD7913C623CB3D6C15C" />
-        </field>
-        <field>
-          <label>Merkle Tree</label>
-          <input readonly />
-        </field>
-        <field>
-          <label>Signed Merkle Root</label>
-          <input readonly />
-        </field>
-        <field>
-          <label>&lt;auth-content&gt; attrs</label>
-          <textarea readonly></textarea>
+          <label>&lt;auth-content&gt; metadata</label>
+          <textarea readonly id="auth-content-attrs"></textarea>
         </field>
       </fieldset>
     </form>
   </body>
+  <script defer="true">
+    async function main() {
+      const el = document.getElementById("content");
+      const pk_multiformat = document.getElementsByName("author-private-key")[0].value;
+      const ans = await AuthQuote_produceSignedContentTree(el, pk_multiformat);
+      console.log(ans);
+      document.getElementById('auth-content-attrs').value = JSON.stringify(ans);
+      return ans;
+    }
+    main();
+  </script>
 </html>
